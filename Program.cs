@@ -6,13 +6,17 @@ Console.WriteLine("[E]xit");
 
 var userChoice = Console.ReadLine();
 
-if (userChoice.Length > 10)
+if (userChoice.Length <= 3)
 {
-    Console.WriteLine("long answer");
+    Console.WriteLine("short answer");
+}
+else if (userChoice.Length < 10)
+{
+    Console.WriteLine("medium answer");
 }
 else
 {
-    Console.WriteLine("short answer");
+    Console.WriteLine("long answer");
 }
 
 
