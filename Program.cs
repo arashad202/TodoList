@@ -1,4 +1,9 @@
 ﻿
+Console.WriteLine("Provide a number");
+string userInput = Console.ReadLine();
+int number = int.Parse(userInput);
+Console.WriteLine(number);
+
 Console.WriteLine("Hello!");
 Console.WriteLine("[S]ee all TODOs");
 Console.WriteLine("[A]dd a TODO");
