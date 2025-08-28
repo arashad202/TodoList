@@ -4,7 +4,16 @@ Console.WriteLine("[A]dd a TODO");
 Console.WriteLine("[R]emove a TODO");
 Console.WriteLine("[E]xit");
 
-string userChoice = Console.ReadLine();
-Console.WriteLine(userChoice);
+var userChoice = Console.ReadLine();
 
-Console.ReadKey();
+if (userChoice.Length > 10)
+{
+    Console.WriteLine("long answer");
+}
+else
+{
+    Console.WriteLine("short answer");
+}
+
+
+    Console.ReadKey(); // preventing window closing
