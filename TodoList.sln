@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36414.22 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList", "TodoList.csproj", "{B44886C3-FA64-4F14-88B5-B4793AE3AC85}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "..\Calculator\Calculator.csproj", "{8B33E058-F5EE-4F54-BFC4-E6023E4389D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B44886C3-FA64-4F14-88B5-B4793AE3AC85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B44886C3-FA64-4F14-88B5-B4793AE3AC85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B44886C3-FA64-4F14-88B5-B4793AE3AC85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B33E058-F5EE-4F54-BFC4-E6023E4389D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B33E058-F5EE-4F54-BFC4-E6023E4389D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B33E058-F5EE-4F54-BFC4-E6023E4389D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B33E058-F5EE-4F54-BFC4-E6023E4389D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
