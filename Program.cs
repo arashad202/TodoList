@@ -1,9 +1,10 @@
-﻿var number = 0;
+﻿Console.WriteLine("Enter a word");
+var userInput = Console.ReadLine();
 
-while (number < 10)
+while (userInput.Length < 15)
 {
-    Console.WriteLine(number);
-    number++;
+    userInput += 'a';
+    Console.WriteLine(userInput);
 }
 
 
