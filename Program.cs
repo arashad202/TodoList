@@ -11,15 +11,10 @@ Console.WriteLine("[R]emove a TODO");
 Console.WriteLine("[E]xit");
 
 var userChoice = Console.ReadLine();
-bool isLong = IsLong(userChoice);
 
-bool IsLong(string input)
-{
-    return input.Length > 10;
-}
+int a = 4, b = 2, c = 10;
+Console.WriteLine($"First is {a} Second is {b} Third is {c}");
 
-var result = Add(10, 5);
-Console.WriteLine("10 + 5 = " + result);
 
 //if (userChoice == "S")
 //{
@@ -45,8 +40,3 @@ Console.ReadKey(); // preventing window closing
 //{
 //    Console.WriteLine("Selected option: " + selectedOption);
 //}
-
-int Add(int a, int b)
-{
-    return a + b;
-}
