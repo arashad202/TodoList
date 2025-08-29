@@ -1,11 +1,12 @@
-﻿Console.WriteLine("Enter a word");
-var userInput = Console.ReadLine();
-
-while (userInput.Length < 15)
+﻿string word;
+do
 {
-    userInput += 'a';
-    Console.WriteLine(userInput);
-}
+    Console.WriteLine("Enter a word longer than 10 letters");
+    word = Console.ReadLine();
+
+} while (word.Length <= 10);
+
+Console.WriteLine("The loop is finished");
 
 
 //Console.WriteLine("Hello!");
