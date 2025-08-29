@@ -1,8 +1,8 @@
 ﻿
-Console.WriteLine("Provide a number");
-string userInput = Console.ReadLine();
-int number = int.Parse(userInput);
-Console.WriteLine(number);
+//Console.WriteLine("Provide a number");
+//string userInput = Console.ReadLine();
+//int number = int.Parse(userInput);
+//Console.WriteLine(number);
 
 Console.WriteLine("Hello!");
 Console.WriteLine("[S]ee all TODOs");
@@ -12,9 +12,28 @@ Console.WriteLine("[E]xit");
 
 var userChoice = Console.ReadLine();
 
-int a = 4, b = 2, c = 10;
-Console.WriteLine($"First is {a} Second is {b} Third is {c}");
-
+switch (userChoice)
+{
+    case "S":
+    case "s":
+        PrintSelectedOption("See all TODOs");
+        break;
+    case "A":
+    case "a":
+        PrintSelectedOption("Add a TODO");
+        break;
+    case "R":
+    case "r":
+        PrintSelectedOption("Remove a TODO");
+        break;
+    case "E":
+    case "e":
+        PrintSelectedOption("Exit");
+        break;
+    default:
+        Console.WriteLine("Invalid input");
+        break;
+}
 
 //if (userChoice == "S")
 //{
@@ -36,7 +55,7 @@ Console.WriteLine($"First is {a} Second is {b} Third is {c}");
 
 Console.ReadKey(); // preventing window closing
 
-//void PrintSelectedOption (string selectedOption)
-//{
-//    Console.WriteLine("Selected option: " + selectedOption);
-//}
+void PrintSelectedOption(string selectedOption)
+{
+    Console.WriteLine("Selected option: " + selectedOption);
+}
