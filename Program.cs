@@ -1,61 +1,50 @@
-﻿
-//Console.WriteLine("Provide a number");
-//string userInput = Console.ReadLine();
-//int number = int.Parse(userInput);
-//Console.WriteLine(number);
+﻿var number = 0;
 
-Console.WriteLine("Hello!");
-Console.WriteLine("[S]ee all TODOs");
-Console.WriteLine("[A]dd a TODO");
-Console.WriteLine("[R]emove a TODO");
-Console.WriteLine("[E]xit");
-
-var userChoice = Console.ReadLine();
-
-switch (userChoice)
+while (number < 10)
 {
-    case "S":
-    case "s":
-        PrintSelectedOption("See all TODOs");
-        break;
-    case "A":
-    case "a":
-        PrintSelectedOption("Add a TODO");
-        break;
-    case "R":
-    case "r":
-        PrintSelectedOption("Remove a TODO");
-        break;
-    case "E":
-    case "e":
-        PrintSelectedOption("Exit");
-        break;
-    default:
-        Console.WriteLine("Invalid input");
-        break;
+    Console.WriteLine(number);
+    number++;
 }
 
-//if (userChoice == "S")
+
+//Console.WriteLine("Hello!");
+//Console.WriteLine("[S]ee all TODOs");
+//Console.WriteLine("[A]dd a TODO");
+//Console.WriteLine("[R]emove a TODO");
+//Console.WriteLine("[E]xit");
+
+//var userChoice = Console.ReadLine();
+
+//switch (userChoice)
 //{
-//    PrintSelectedOption("See all TODOs");
+//    case "S":
+//    case "s":
+//        PrintSelectedOption("See all TODOs");
+//        break;
+//    case "A":
+//    case "a":
+//        PrintSelectedOption("Add a TODO");
+//        break;
+//    case "R":
+//    case "r":
+//        PrintSelectedOption("Remove a TODO");
+//        break;
+//    case "E":
+//    case "e":
+//        PrintSelectedOption("Exit");
+//        break;
+//    default:
+//        Console.WriteLine("Invalid input");
+//        break;
 //}
-//else if (userChoice == "A")
+
+//void PrintSelectedOption(string selectedOption)
 //{
-//    PrintSelectedOption("Add a TODO");
+//    Console.WriteLine("Selected option: " + selectedOption);
 //}
-//else if (userChoice == "R")
-//{
-//    PrintSelectedOption("Remove a TODO");
-//}
-//else if (userChoice == "E")
-//{
-//    PrintSelectedOption("Exit");
-//}
+
 
 
 Console.ReadKey(); // preventing window closing
 
-void PrintSelectedOption(string selectedOption)
-{
-    Console.WriteLine("Selected option: " + selectedOption);
-}
+
