@@ -1,30 +1,9 @@
-﻿char[,] letters = new char[2, 3];
+﻿var words = new[] { "one", "two", "three", "four" };
 
-letters[0, 0] = 'A';
-letters[0, 1] = 'B';
-letters[0, 2] = 'C';
-letters[1, 0] = 'D';
-letters[1, 1] = 'E';
-letters[1, 2] = 'F';
-
-var height = letters.GetLength(0);
-var width = letters.GetLength(1);
-
-for (int i = 0; i < height; i++)
+foreach (var word in words)
 {
-    Console.WriteLine($"i is {i}");
-    for (int j = 0; j < width; j++)
-    {
-        Console.WriteLine($"J is {j}");
-        Console.WriteLine($"Element is {letters[i, j]}");
-    }
+    Console.WriteLine(word);
 }
-
-var letters2 = new char[,]
-{
-    { 'A', 'B', 'C' },
-    { 'D', 'E', 'F' },
-};
 
 
 //Console.WriteLine("Hello!");
