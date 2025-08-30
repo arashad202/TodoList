@@ -1,9 +1,20 @@
-﻿var words = new[] { "one", "two", "three", "four" };
+﻿//List<string> words = new List<string>();
+var words = new List<string> { "one", "two" };
+
+//Console.WriteLine($"Count of elements is {words.Count}");
+
+
+words.AddRange(new[] { "three", "four", "five" });
+
+Console.WriteLine("Removing an element");
+//words.Remove("two");
+words.RemoveAt(0);
 
 foreach (var word in words)
 {
     Console.WriteLine(word);
 }
+
 
 
 //Console.WriteLine("Hello!");
