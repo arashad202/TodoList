@@ -1,12 +1,30 @@
-﻿int[] numbers = new int[] { 2, 6, 1, 6, 19 };
+﻿char[,] letters = new char[2, 3];
 
-int sum = 0;
+letters[0, 0] = 'A';
+letters[0, 1] = 'B';
+letters[0, 2] = 'C';
+letters[1, 0] = 'D';
+letters[1, 1] = 'E';
+letters[1, 2] = 'F';
 
-for (int i = 0; i < numbers.Length; ++i)
+var height = letters.GetLength(0);
+var width = letters.GetLength(1);
+
+for (int i = 0; i < height; i++)
 {
-    sum += numbers[i];
+    Console.WriteLine($"i is {i}");
+    for (int j = 0; j < width; j++)
+    {
+        Console.WriteLine($"J is {j}");
+        Console.WriteLine($"Element is {letters[i, j]}");
+    }
 }
-Console.WriteLine( $"Sum: {sum}");
+
+var letters2 = new char[,]
+{
+    { 'A', 'B', 'C' },
+    { 'D', 'E', 'F' },
+};
 
 
 //Console.WriteLine("Hello!");
