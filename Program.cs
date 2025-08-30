@@ -1,9 +1,12 @@
-﻿for (int i = 0; i < 5; ++i)
-{
-    Console.WriteLine("Hello");
-}
+﻿int[] numbers = new int[] { 2, 6, 1, 6, 19 };
 
-Console.WriteLine("The loop is finished");
+int sum = 0;
+
+for (int i = 0; i < numbers.Length; ++i)
+{
+    sum += numbers[i];
+}
+Console.WriteLine( $"Sum: {sum}");
 
 
 //Console.WriteLine("Hello!");
